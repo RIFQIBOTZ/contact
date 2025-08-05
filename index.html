@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rifqii Store - Hubungi Kami</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
     <style>
         * {
             margin: 0;
@@ -204,16 +204,6 @@
             line-height: 1.5;
         }
 
-        .coming-soon {
-            background: linear-gradient(45deg, #ff6b6b, #ffa500);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-top: 10px;
-            display: inline-block;
-        }
-
         .footer {
             margin-top: 30px;
             color: #a0aec0;
@@ -291,27 +281,27 @@
 </head>
 <body>
     <div class="notification whatsapp-notif" id="whatsappNotif">
-        <div class="notification-icon"></div>
+        <div class="notification-icon">✓</div>
         <div>Membuka WhatsApp...</div>
     </div>
     
     <div class="notification telegram-notif" id="telegramNotif">
-        <div class="notification-icon"></div>
+        <div class="notification-icon">✓</div>
         <div>Membuka Telegram...</div>
     </div>
     
     <div class="notification email-notif" id="emailNotif">
-        <div class="notification-icon"></div>
+        <div class="notification-icon">✓</div>
         <div>Membuka Email...</div>
     </div>
     
     <div class="notification whatsapp-group-notif" id="whatsappGroupNotif">
-        <div class="notification-icon"></div>
+        <div class="notification-icon">✓</div>
         <div>Membuka Grup WhatsApp...</div>
     </div>
     
     <div class="notification telegram-group-notif" id="telegramGroupNotif">
-        <div class="notification-icon"></div>
+        <div class="notification-icon">✓</div>
         <div>Membuka Grup Telegram...</div>
     </div>
     
@@ -359,7 +349,6 @@
                 </div>
                 <div class="contact-title">Grup WhatsApp</div>
                 <div class="contact-desc">Bergabung dengan komunitas pelanggan kami</div>
-                <div class="coming-soon">Segera Hadir</div>
             </div>
             
             <div class="contact-item telegram-group" onclick="openContact('telegram-group')">
@@ -375,7 +364,7 @@
         </div>
         
         <div class="footer">
-            � 2025 Rifqii Store. Siap melayani Anda!
+            © 2025 Rifqii Store. Siap melayani Anda!
         </div>
     </div>
 
@@ -398,6 +387,7 @@
                     notificationId = 'emailNotif';
                     break;
                 case 'whatsapp-group':
+                    url = 'https://chat.whatsapp.com/KRbcEQK7xZTFNEm6EIDzub?mode=ac_t';
                     notificationId = 'whatsappGroupNotif';
                     break;
                 case 'telegram-group':
@@ -412,11 +402,7 @@
             
             // Buka link setelah animasi notifikasi
             setTimeout(() => {
-                if (type === 'whatsapp-group') {
-                    alert('Grup WhatsApp akan segera hadir! Terima kasih atas kesabaran Anda.');
-                } else if (url) {
-                    window.open(url, '_blank');
-                }
+                window.open(url, '_blank');
                 
                 // Sembunyikan notifikasi setelah 1.5 detik
                 setTimeout(() => {
