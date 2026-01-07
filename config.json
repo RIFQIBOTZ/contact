@@ -1,0 +1,82 @@
+{
+  "site": {
+    "title": "Rifqii Store",
+    "subtitle": "Hubungi Kami Sekarang!",
+    "description": "Platform terpercaya untuk kebutuhan digital Anda",
+    "tagline": "AI-Powered Digital Solutions",
+    "copyright": "© 2025 Rifqii Store. Siap melayani Anda!"
+  },
+  "groups": [
+    {
+      "id": "contact_admin",
+      "title": "Contact Admin",
+      "items": [
+        {
+          "id": "whatsapp",
+          "type": "whatsapp",
+          "number": "6289512839279",
+          "url": "https://wa.me/6289512839279",
+          "title": "WhatsApp",
+          "description": "Whatsapp Real Rifqii Store",
+          "enabled": true
+        },
+        {
+          "id": "telegram",
+          "type": "telegram",
+          "username": "rifqibotz",
+          "url": "https://t.me/rifqibotz",
+          "title": "Telegram",
+          "description": "Telegram Real Rifqii Store",
+          "enabled": true
+        },
+        {
+          "id": "email",
+          "type": "email",
+          "address": "rifqiistore87@gmail.com",
+          "url": "mailto:rifqiistore87@gmail.com",
+          "title": "Email",
+          "description": "rifqiistore87@gmail.com",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "group_admin",
+      "title": "Group Admin",
+      "items": [
+        {
+          "id": "whatsapp_group",
+          "type": "whatsapp_group",
+          "url": "https://chat.whatsapp.com/JC5LpgMTNS70yM3CuCWq1O",
+          "title": "Grup WhatsApp",
+          "description": "Bergabung dengan komunitas pelanggan kami",
+          "enabled": true
+        },
+        {
+          "id": "telegram_group",
+          "type": "telegram_group",
+          "username": "rifqibotz87",
+          "url": "https://t.me/rifqibotz87",
+          "title": "Grup Telegram",
+          "description": "Bergabung dengan komunitas pelanggan kami",
+          "enabled": true
+        }
+      ]
+    }
+  ],
+  "notifications": {
+    "whatsapp": "Membuka WhatsApp...",
+    "telegram": "Membuka Telegram...",
+    "email": "Membuka Email...",
+    "whatsapp_group": "Membuka Grup WhatsApp...",
+    "telegram_group": "Membuka Grup Telegram..."
+  },
+  "theme": {
+    "primaryColor": "#00d4ff",
+    "secondaryColor": "#0095ff",
+    "accentColor": "#00ffff",
+    "lightBg": "#f8fafc",
+    "lightSurface": "#ffffff",
+    "lightCard": "#f1f5f9"
+  }
+}
