@@ -37,9 +37,6 @@ async function loadConfig() {
         // Populate site information
         populateSiteInfo();
         
-        // Generate contact cards
-        generateContactCards();
-        
     } catch (error) {
         console.error('❌ Error loading config:', error);
         showErrorMessage('Gagal memuat konfigurasi. Menggunakan data default.');
